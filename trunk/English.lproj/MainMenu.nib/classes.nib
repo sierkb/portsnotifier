@@ -7,11 +7,13 @@
                 goDonateSite = id; 
                 goMacPortsOrg = id; 
                 goPortsNotifierSite = id; 
+                savePreferences = id; 
                 syncPorts = id; 
             }; 
             CLASS = PNController; 
             LANGUAGE = ObjC; 
             OUTLETS = {
+                intervalField = NSTextField; 
                 portsManager = id; 
                 preferencePanel = NSPanel; 
                 statusItem = NSStatusItem; 
@@ -25,6 +27,12 @@
             LANGUAGE = ObjC; 
             OUTLETS = {perferencesPanel = NSPanel; secondBox = id; }; 
             SUPERCLASS = NSObject; 
+        }, 
+        {
+            CLASS = PNPerferencesPanel; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {controller = PNController; intervalBox = NSComboBox; }; 
+            SUPERCLASS = NSPanel; 
         }, 
         {CLASS = PNPortInfo; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
         {CLASS = PNPortWrapper; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
