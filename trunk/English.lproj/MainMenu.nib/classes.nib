@@ -1,0 +1,34 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = NSDatePicker; LANGUAGE = ObjC; SUPERCLASS = NSControl; }, 
+        {
+            ACTIONS = {
+                goDonateSite = id; 
+                goMacPortsOrg = id; 
+                goPortsNotifierSite = id; 
+                syncPorts = id; 
+            }; 
+            CLASS = PNController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                portsManager = id; 
+                preferencePanel = NSPanel; 
+                statusItem = NSStatusItem; 
+                statusMenu = NSMenu; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {storeToFile = id; }; 
+            CLASS = PNDeamon; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {perferencesPanel = NSPanel; secondBox = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = PNPortInfo; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = PNPortWrapper; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = PNPortsManager; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}
