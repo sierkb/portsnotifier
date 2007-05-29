@@ -1,0 +1,449 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D0566C70C0B2DEF000A19CA /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D0566C60C0B2DEF000A19CA /* Security.framework */; };
+		3DC24E030C09C9A3001F1791 /* org.xulei.portsnotifier.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D58E5200C0899F2004CE3E1 /* org.xulei.portsnotifier.plist */; };
+		3DC24E040C09C9A3001F1791 /* StatusBarLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DCBB3560C031D4D00ED3D65 /* StatusBarLogo.png */; };
+		3DC24E050C09C9A3001F1791 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D1107310486CEB800E47090 /* Info.plist */; };
+		3DC24E060C09C9A3001F1791 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		3DC24E070C09C9A3001F1791 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
+		3DC24E080C09C9BC001F1791 /* PNController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D22B42D0C0317BA007DDDB5 /* PNController.m */; };
+		3DC24E0A0C09C9BC001F1791 /* PNPortWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD1819F0C0343F200D19538 /* PNPortWrapper.m */; };
+		3DC24E0B0C09C9BC001F1791 /* PNPortsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCBB3FA0C03375600ED3D65 /* PNPortsManager.m */; };
+		3DC24E0C0C09C9BC001F1791 /* PNPortInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCBB3E50C032D7800ED3D65 /* PNPortInfo.m */; };
+		3DC24E0D0C09C9BC001F1791 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		3DC24E100C09C9CE001F1791 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		3DC24E110C09C9CF001F1791 /* SecurityFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D461D390C04BAB50068D9F7 /* SecurityFoundation.framework */; };
+		3DC24E180C09C9FC001F1791 /* SecurityFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D461D390C04BAB50068D9F7 /* SecurityFoundation.framework */; };
+		3DC24E190C09C9FC001F1791 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		3DC24E380C09CEFB001F1791 /* StatusBarLogoNoAvailable.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DC24E370C09CEFB001F1791 /* StatusBarLogoNoAvailable.png */; };
+		3DDCC51D0C060733003AE690 /* PortsHelper.c in Sources */ = {isa = PBXBuildFile; fileRef = 3DDCC5160C060700003AE690 /* PortsHelper.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3D0566CB0C0B2EC7000A19CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DDCC51A0C060721003AE690;
+			remoteInfo = PortsHelper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32CA4F630368D1EE00C91783 /* PortsNotifier_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PortsNotifier_Prefix.pch; sourceTree = "<group>"; };
+		3D0566C60C0B2DEF000A19CA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = /System/Library/Frameworks/Security.framework; sourceTree = "<absolute>"; };
+		3D22B42D0C0317BA007DDDB5 /* PNController.m */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.objc; path = PNController.m; sourceTree = "<group>"; };
+		3D22B42E0C0317BA007DDDB5 /* PNController.h */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.h; path = PNController.h; sourceTree = "<group>"; };
+		3D461D390C04BAB50068D9F7 /* SecurityFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SecurityFoundation.framework; path = /System/Library/Frameworks/SecurityFoundation.framework; sourceTree = "<absolute>"; };
+		3D58E5200C0899F2004CE3E1 /* org.xulei.portsnotifier.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = org.xulei.portsnotifier.plist; sourceTree = "<group>"; };
+		3DC24DFD0C09C996001F1791 /* PortsNotifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PortsNotifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DC24E370C09CEFB001F1791 /* StatusBarLogoNoAvailable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StatusBarLogoNoAvailable.png; sourceTree = "<group>"; };
+		3DCBB3560C031D4D00ED3D65 /* StatusBarLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StatusBarLogo.png; sourceTree = "<group>"; };
+		3DCBB3E40C032D7800ED3D65 /* PNPortInfo.h */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.h; path = PNPortInfo.h; sourceTree = "<group>"; };
+		3DCBB3E50C032D7800ED3D65 /* PNPortInfo.m */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.objc; path = PNPortInfo.m; sourceTree = "<group>"; };
+		3DCBB3FA0C03375600ED3D65 /* PNPortsManager.m */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.objc; path = PNPortsManager.m; sourceTree = "<group>"; };
+		3DCBB3FB0C03375600ED3D65 /* PNPortsManager.h */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.h; path = PNPortsManager.h; sourceTree = "<group>"; };
+		3DD1819E0C0343F200D19538 /* PNPortWrapper.h */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.h; path = PNPortWrapper.h; sourceTree = "<group>"; };
+		3DD1819F0C0343F200D19538 /* PNPortWrapper.m */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.objc; path = PNPortWrapper.m; sourceTree = "<group>"; };
+		3DDCC5160C060700003AE690 /* PortsHelper.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = PortsHelper.c; sourceTree = "<group>"; };
+		3DDCC51B0C060721003AE690 /* PortsHelper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PortsHelper; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DC24DFB0C09C996001F1791 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DC24E180C09C9FC001F1791 /* SecurityFoundation.framework in Frameworks */,
+				3DC24E190C09C9FC001F1791 /* Cocoa.framework in Frameworks */,
+				3D0566C70C0B2DEF000A19CA /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DDCC5190C060721003AE690 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DC24E100C09C9CE001F1791 /* Cocoa.framework in Frameworks */,
+				3DC24E110C09C9CF001F1791 /* SecurityFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3DD1819E0C0343F200D19538 /* PNPortWrapper.h */,
+				3DD1819F0C0343F200D19538 /* PNPortWrapper.m */,
+				3DCBB3FB0C03375600ED3D65 /* PNPortsManager.h */,
+				3DCBB3FA0C03375600ED3D65 /* PNPortsManager.m */,
+				3DCBB3E40C032D7800ED3D65 /* PNPortInfo.h */,
+				3DCBB3E50C032D7800ED3D65 /* PNPortInfo.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D461D390C04BAB50068D9F7 /* SecurityFoundation.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DDCC51B0C060721003AE690 /* PortsHelper */,
+				3DC24DFD0C09C996001F1791 /* PortsNotifier.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* PortsNotifier */ = {
+			isa = PBXGroup;
+			children = (
+				3D461C6F0C048E7F0068D9F7 /* Helper */,
+				3D22B4310C031868007DDDB5 /* UI */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = PortsNotifier;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* PortsNotifier_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3DC24E370C09CEFB001F1791 /* StatusBarLogoNoAvailable.png */,
+				3D58E5200C0899F2004CE3E1 /* org.xulei.portsnotifier.plist */,
+				3DCBB3560C031D4D00ED3D65 /* StatusBarLogo.png */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D0566C60C0B2DEF000A19CA /* Security.framework */,
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3D22B4310C031868007DDDB5 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3D22B42E0C0317BA007DDDB5 /* PNController.h */,
+				3D22B42D0C0317BA007DDDB5 /* PNController.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		3D461C6F0C048E7F0068D9F7 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				3DDCC5160C060700003AE690 /* PortsHelper.c */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DC24DFC0C09C996001F1791 /* PortsNotifier */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DC24E000C09C997001F1791 /* Build configuration list for PBXNativeTarget "PortsNotifier" */;
+			buildPhases = (
+				3DC24DF90C09C996001F1791 /* Resources */,
+				3DC24DFA0C09C996001F1791 /* Sources */,
+				3DC24DFB0C09C996001F1791 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D0566CC0C0B2EC7000A19CA /* PBXTargetDependency */,
+			);
+			name = PortsNotifier;
+			productName = PortsNotifier;
+			productReference = 3DC24DFD0C09C996001F1791 /* PortsNotifier.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3DDCC51A0C060721003AE690 /* PortsHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DDCC5200C060759003AE690 /* Build configuration list for PBXNativeTarget "PortsHelper" */;
+			buildPhases = (
+				3DDCC5180C060721003AE690 /* Sources */,
+				3DDCC5190C060721003AE690 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PortsHelper;
+			productName = PortsHelper;
+			productReference = 3DDCC51B0C060721003AE690 /* PortsHelper */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "PortsNotifier" */;
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* PortsNotifier */;
+			projectDirPath = "";
+			targets = (
+				3DDCC51A0C060721003AE690 /* PortsHelper */,
+				3DC24DFC0C09C996001F1791 /* PortsNotifier */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DC24DF90C09C996001F1791 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DC24E030C09C9A3001F1791 /* org.xulei.portsnotifier.plist in Resources */,
+				3DC24E040C09C9A3001F1791 /* StatusBarLogo.png in Resources */,
+				3DC24E050C09C9A3001F1791 /* Info.plist in Resources */,
+				3DC24E060C09C9A3001F1791 /* InfoPlist.strings in Resources */,
+				3DC24E070C09C9A3001F1791 /* MainMenu.nib in Resources */,
+				3DC24E380C09CEFB001F1791 /* StatusBarLogoNoAvailable.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DC24DFA0C09C996001F1791 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DC24E080C09C9BC001F1791 /* PNController.m in Sources */,
+				3DC24E0A0C09C9BC001F1791 /* PNPortWrapper.m in Sources */,
+				3DC24E0B0C09C9BC001F1791 /* PNPortsManager.m in Sources */,
+				3DC24E0C0C09C9BC001F1791 /* PNPortInfo.m in Sources */,
+				3DC24E0D0C09C9BC001F1791 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DDCC5180C060721003AE690 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DDCC51D0C060733003AE690 /* PortsHelper.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D0566CC0C0B2EC7000A19CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DDCC51A0C060721003AE690 /* PortsHelper */;
+			targetProxy = 3D0566CB0C0B2EC7000A19CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		29B97318FDCFA39411CA2CEA /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29B97319FDCFA39411CA2CEA /* English */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3DC24E010C09C997001F1791 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = PortsNotifier;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		3DC24E020C09C997001F1791 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = PortsNotifier;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		3DDCC5210C060759003AE690 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEPLOYMENT_LOCATION = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = "$(HOME)/bin";
+				PREBINDING = NO;
+				PRODUCT_NAME = PortsHelper;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		3DDCC5220C060759003AE690 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEPLOYMENT_LOCATION = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = "$(HOME)/bin";
+				PREBINDING = NO;
+				PRODUCT_NAME = PortsHelper;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DC24E000C09C997001F1791 /* Build configuration list for PBXNativeTarget "PortsNotifier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DC24E010C09C997001F1791 /* Debug */,
+				3DC24E020C09C997001F1791 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DDCC5200C060759003AE690 /* Build configuration list for PBXNativeTarget "PortsHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DDCC5210C060759003AE690 /* Debug */,
+				3DDCC5220C060759003AE690 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "PortsNotifier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
