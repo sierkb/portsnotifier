@@ -8,6 +8,7 @@
     IBOutlet NSStatusItem *statusItem;
     IBOutlet NSMenu *statusMenu;
 	IBOutlet NSPanel *preferencePanel;
+	IBOutlet NSTextField *intervalField;
 	
 	NSTimer *queryPortsTimer;
 }
@@ -19,6 +20,7 @@
 
 - (IBAction)syncPorts:(id)sender;
 - (void) updateStatusMenuWithPorts;
+
 /// go to associated sites
 - (IBAction)goPortsNotifierSite:(id)sender;
 - (IBAction)goDonateSite:(id)sender;
@@ -27,4 +29,6 @@
 
 - (unsigned) intervalMinutes;
 - (NSString *) intervalMinutesString;
+- (IBAction) savePreferences:(id)sender;
+- (NSArray *)availableIntervals;
 @end

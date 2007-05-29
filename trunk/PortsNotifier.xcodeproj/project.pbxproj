@@ -23,6 +23,7 @@
 		3DC24E180C09C9FC001F1791 /* SecurityFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D461D390C04BAB50068D9F7 /* SecurityFoundation.framework */; };
 		3DC24E190C09C9FC001F1791 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		3DC24E380C09CEFB001F1791 /* StatusBarLogoNoAvailable.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DC24E370C09CEFB001F1791 /* StatusBarLogoNoAvailable.png */; };
+		3DD2133A0C0C82FE0051AF4B /* PNPerferencesPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD213390C0C82FE0051AF4B /* PNPerferencesPanel.m */; };
 		3DDCC51D0C060733003AE690 /* PortsHelper.c in Sources */ = {isa = PBXBuildFile; fileRef = 3DDCC5160C060700003AE690 /* PortsHelper.c */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,9 @@
 		3DCBB3FB0C03375600ED3D65 /* PNPortsManager.h */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.h; path = PNPortsManager.h; sourceTree = "<group>"; };
 		3DD1819E0C0343F200D19538 /* PNPortWrapper.h */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.h; path = PNPortWrapper.h; sourceTree = "<group>"; };
 		3DD1819F0C0343F200D19538 /* PNPortWrapper.m */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.objc; path = PNPortWrapper.m; sourceTree = "<group>"; };
+		3DD212670C0C67940051AF4B /* PNDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNDefines.h; sourceTree = "<group>"; };
+		3DD213380C0C82FE0051AF4B /* PNPerferencesPanel.h */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.h; path = PNPerferencesPanel.h; sourceTree = "<group>"; };
+		3DD213390C0C82FE0051AF4B /* PNPerferencesPanel.m */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.objc; path = PNPerferencesPanel.m; sourceTree = "<group>"; };
 		3DDCC5160C060700003AE690 /* PortsHelper.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = PortsHelper.c; sourceTree = "<group>"; };
 		3DDCC51B0C060721003AE690 /* PortsHelper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PortsHelper; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -147,6 +151,7 @@
 			children = (
 				32CA4F630368D1EE00C91783 /* PortsNotifier_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
+				3DD212670C0C67940051AF4B /* PNDefines.h */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -179,6 +184,8 @@
 			children = (
 				3D22B42E0C0317BA007DDDB5 /* PNController.h */,
 				3D22B42D0C0317BA007DDDB5 /* PNController.m */,
+				3DD213380C0C82FE0051AF4B /* PNPerferencesPanel.h */,
+				3DD213390C0C82FE0051AF4B /* PNPerferencesPanel.m */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -270,6 +277,7 @@
 				3DC24E0B0C09C9BC001F1791 /* PNPortsManager.m in Sources */,
 				3DC24E0C0C09C9BC001F1791 /* PNPortInfo.m in Sources */,
 				3DC24E0D0C09C9BC001F1791 /* main.m in Sources */,
+				3DD2133A0C0C82FE0051AF4B /* PNPerferencesPanel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
