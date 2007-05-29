@@ -23,7 +23,7 @@
 {
 }
 + (PNWrapperResult *)executeCommand:(NSString*)aCommand  withArgs:(NSArray*)arguments;
-+ (OSStatus)executeByRoot:(char const*)aCommand withArgs:(char**)arguments;
++ (OSStatus)executeByRoot:(char const*)aCommand withArgs:(char const**)arguments;
 + (BOOL) isMacPortsInstalled;
 + (NSArray*) getAllOutdatedPorts;
 

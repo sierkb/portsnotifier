@@ -2,6 +2,7 @@
 #import "PNPortWrapper.h"
 #import "PNPortsManager.h"
 #import "PNPortInfo.h"
+#import "PNDefines.h"
 #import "SecurityFoundation/SFAuthorization.h"
 
 #import "stdio.h"
@@ -111,9 +112,9 @@
 	
 	[syncMenuItem setTitle:syncing];
 	[portsManager lock];
-	char *arguments[] = {NULL};
+	char const *arguments[] = {NULL};
 	NSApplicationDirectory;
-	[PNPortWrapper executeByRoot:"/usr/local/bin/PortsHelper" withArgs:arguments];
+	[PNPortWrapper executeByRoot:PN_HELPER_PATH withArgs:arguments];
 	[portsManager unlock];
 	[syncMenuItem setTitle:@"Sync now"];
 	
@@ -222,12 +223,79 @@ finish:
 
 - (NSString *) intervalMinutesString
 {
-	return [NSString stringWithFormat:@"%d", [self intervalMinutes]];
+	
+	NSString *intervalString;
+	unsigned minute = [self intervalMinutes];
+	if(minute < 60)
+		intervalString = [NSString stringWithFormat:@"%d minutes", minute];
+	else if(minute == 60)
+		intervalString = @"1 hour";
+	else if(minute < 60*24)
+		intervalString = [NSString stringWithFormat:@"%d hours", (int)minute/60];
+	else 
+		intervalString = @"1 day";
+		
+	return intervalString;
 }
 
 - (unsigned) intervalMinutes
 {
-	return 1;
+	unsigned defaultInterval = 30; // minutes;
+	
+	NSString *path = [NSString stringWithCString:PN_LAUNCHD_PLIST]; // Assume this is a path to a valid plist.
+	NSData *plistData;
+	NSString *error;
+	NSPropertyListFormat format;
+	id plist;
+	plistData = [NSData dataWithContentsOfFile:path];
+	
+	plist = [NSPropertyListSerialization propertyListFromData:plistData
+											 mutabilityOption:NSPropertyListImmutable
+													   format:&format
+											 errorDescription:&error];
+	if(!plist)
+	{
+		NSLog(error);
+		[error release];
+	}
+	
+	NSNumber *interval = [plist valueForKey:@"StartInterval"];
+	//NSLog(@"Interval: %d", [interval intValue]);
+	if(interval == nil)
+		return defaultInterval;
+	
+	return [interval intValue] / 60;
 }
 
+- (IBAction) savePreferences:(id)sender
+{
+	NSLog(@"Save preferences");
+	NSString *intString = [intervalField stringValue];
+	NSLog(@"Get interval: %@", intString);
+	
+	int intervalValue = 10;
+	if([intString isEqualToString:@"10 minutes"]){
+		intervalValue = 10;
+	}else if([intString isEqualToString:@"20 minutes"]){
+		intervalValue = 20;
+	}else if([intString isEqualToString:@"30 minutes"]){
+		intervalValue = 30;
+	}else if([intString isEqualToString:@"1 hour"]){
+		intervalValue = 60;
+	}else if([intString isEqualToString:@"2 hours"]){
+		intervalValue = 120;
+	}else if([intString isEqualToString:@"1 day"]){
+		intervalValue = 24 * 60;
+	};
+	
+	char const*argv[] = {"-i", [[NSString stringWithFormat:@"%d", intervalValue] cString], NULL};
+	[PNPortWrapper executeByRoot:PN_HELPER_PATH withArgs:argv];
+	[preferencePanel close];
+}
+
+- (NSArray*) availableIntervals
+{
+	return [NSArray arrayWithObjects:@"10 minutes", @"20 minutes", @"30 minutes", @"1 hour",
+		@"2 hours", @"1 day", nil];
+}
 @end

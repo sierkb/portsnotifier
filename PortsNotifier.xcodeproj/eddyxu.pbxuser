@@ -13,10 +13,9 @@
 		activeExecutable = 3DC24DFE0C09C997001F1791 /* PortsNotifier */;
 		activeTarget = 3DC24DFC0C09C996001F1791 /* PortsNotifier */;
 		addToTargets = (
-			3DC24DFC0C09C996001F1791 /* PortsNotifier */,
 		);
 		breakpoints = (
-			3D58E4660C0881B4004CE3E1 /* PNPortsManager.m:64 */,
+			3DD212DC0C0C71610051AF4B /* PortsHelper.c:135 */,
 		);
 		breakpointsGroup = 3DD182530C034F3800D19538 /* XCBreakpointsBucket */;
 		codeSenseManager = 3D22B42B0C0314CB007DDDB5 /* Code sense */;
@@ -67,7 +66,7 @@
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
 					484,
-					539,
+					539.2085,
 				);
 				PBXFileTableDataSourceColumnsKey = (
 					PBXErrorsWarningsDataSource_TypeID,
@@ -161,12 +160,18 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 202132354;
-			PBXWorkspaceStateSaveDate = 202132354;
+			PBXPerProjectTemplateStateSaveDate = 202147922;
+			PBXWorkspaceStateSaveDate = 202147922;
 		};
 		perUserProjectItems = {
-			3DD211790C0C4B900051AF4B /* PBXTextBookmark */ = 3DD211790C0C4B900051AF4B /* PBXTextBookmark */;
-			3DD2117A0C0C4B900051AF4B /* PBXTextBookmark */ = 3DD2117A0C0C4B900051AF4B /* PBXTextBookmark */;
+			3DD2139E0C0C87480051AF4B /* PBXTextBookmark */ = 3DD2139E0C0C87480051AF4B /* PBXTextBookmark */;
+			3DD2139F0C0C87480051AF4B /* PBXTextBookmark */ = 3DD2139F0C0C87480051AF4B /* PBXTextBookmark */;
+			3DD213A00C0C87480051AF4B /* PBXTextBookmark */ = 3DD213A00C0C87480051AF4B /* PBXTextBookmark */;
+			3DD213A10C0C87480051AF4B /* PBXTextBookmark */ = 3DD213A10C0C87480051AF4B /* PBXTextBookmark */;
+			3DD213B30C0C886E0051AF4B /* PBXTextBookmark */ = 3DD213B30C0C886E0051AF4B /* PBXTextBookmark */;
+			3DD213B40C0C886E0051AF4B /* PBXTextBookmark */ = 3DD213B40C0C886E0051AF4B /* PBXTextBookmark */;
+			3DD213B50C0C886E0051AF4B /* PBXTextBookmark */ = 3DD213B50C0C886E0051AF4B /* PBXTextBookmark */;
+			3DD213B60C0C886E0051AF4B /* PBXTextBookmark */ = 3DD213B60C0C886E0051AF4B /* PBXTextBookmark */;
 		};
 		sourceControlManager = 3D22B42A0C0314CB007DDDB5 /* Source Control */;
 		userBuildSettings = {
@@ -186,34 +191,19 @@
 	};
 	3D22B42D0C0317BA007DDDB5 /* PNController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1126, 3978}}";
-			sepNavSelRange = "{1035, 0}";
-			sepNavVisRect = "{{0, 0}, {1126, 654}}";
-			sepNavWindowFrame = "{{58, 51}, {1171, 727}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1126, 5134}}";
+			sepNavSelRange = "{2839, 0}";
+			sepNavVisRect = "{{0, 1649}, {1126, 654}}";
+			sepNavWindowFrame = "{{31, 51}, {1171, 727}}";
 		};
 	};
 	3D22B42E0C0317BA007DDDB5 /* PNController.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1126, 645}}";
-			sepNavSelRange = "{775, 0}";
+			sepNavSelRange = "{856, 32}";
 			sepNavVisRect = "{{0, 0}, {1126, 645}}";
 			sepNavWindowFrame = "{{125, 53}, {1171, 718}}";
 		};
-	};
-	3D58E4660C0881B4004CE3E1 /* PNPortsManager.m:64 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		delayBeforeContinue = 0;
-		fileReference = 3DCBB3FA0C03375600ED3D65 /* PNPortsManager.m */;
-		functionName = "-updatePorts";
-		hitCount = 1;
-		lineNumber = 64;
-		location = PortsNotifier;
-		modificationTime = 202096544.600857;
-		state = 1;
 	};
 	3D58E5200C0899F2004CE3E1 /* org.xulei.portsnotifier.plist */ = {
 		uiCtxt = {
@@ -292,7 +282,7 @@
 	3DD1819E0C0343F200D19538 /* PNPortWrapper.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1126, 645}}";
-			sepNavSelRange = "{588, 0}";
+			sepNavSelRange = "{592, 0}";
 			sepNavVisRect = "{{0, 0}, {1126, 645}}";
 			sepNavWindowFrame = "{{285, 60}, {1171, 718}}";
 		};
@@ -300,8 +290,8 @@
 	3DD1819F0C0343F200D19538 /* PNPortWrapper.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1126, 3485}}";
-			sepNavSelRange = "{3970, 33}";
-			sepNavVisRect = "{{0, 564}, {1126, 645}}";
+			sepNavSelRange = "{1901, 76}";
+			sepNavVisRect = "{{0, 1589}, {1126, 645}}";
 			sepNavWindowFrame = "{{84, 60}, {1171, 718}}";
 		};
 	};
@@ -309,35 +299,133 @@
 		isa = XCBreakpointsBucket;
 		name = "Project Breakpoints";
 		objects = (
-			3D58E4660C0881B4004CE3E1 /* PNPortsManager.m:64 */,
+			3DD212DC0C0C71610051AF4B /* PortsHelper.c:135 */,
 		);
 	};
-	3DD211790C0C4B900051AF4B /* PBXTextBookmark */ = {
+	3DD212670C0C67940051AF4B /* PNDefines.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1126, 654}}";
+			sepNavSelRange = "{467, 0}";
+			sepNavVisRect = "{{0, 0}, {1126, 654}}";
+			sepNavWindowFrame = "{{15, 46}, {1171, 727}}";
+		};
+	};
+	3DD212DC0C0C71610051AF4B /* PortsHelper.c:135 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		delayBeforeContinue = 0;
+		fileReference = 3DDCC5160C060700003AE690 /* PortsHelper.c */;
+		functionName = "pn_write_plist()";
+		hitCount = 1;
+		lineNumber = 135;
+		modificationTime = 202145334.480487;
+		state = 2;
+	};
+	3DD213380C0C82FE0051AF4B /* PNPerferencesPanel.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1126, 654}}";
+			sepNavSelRange = "{74, 0}";
+			sepNavVisRect = "{{0, 0}, {1126, 654}}";
+			sepNavWindowFrame = "{{15, 46}, {1171, 727}}";
+		};
+	};
+	3DD213390C0C82FE0051AF4B /* PNPerferencesPanel.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1126, 654}}";
+			sepNavSelRange = "{355, 0}";
+			sepNavVisRect = "{{0, 0}, {1126, 654}}";
+			sepNavWindowFrame = "{{30, 51}, {1171, 727}}";
+		};
+	};
+	3DD2139E0C0C87480051AF4B /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 3DDCC5160C060700003AE690 /* PortsHelper.c */;
-		name = "PortsHelper.c: 36";
+		fRef = 3D22B42D0C0317BA007DDDB5 /* PNController.m */;
+		name = "PNController.m: 115";
 		rLen = 0;
-		rLoc = 621;
+		rLoc = 2839;
 		rType = 0;
-		vrLen = 656;
+		vrLen = 923;
+		vrLoc = 2350;
+	};
+	3DD2139F0C0C87480051AF4B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3DD1819E0C0343F200D19538 /* PNPortWrapper.h */;
+		name = "PNPortWrapper.h: executeByRoot:withArgs:";
+		rLen = 0;
+		rLoc = 592;
+		rType = 0;
+		vrLen = 676;
 		vrLoc = 0;
 	};
-	3DD2117A0C0C4B900051AF4B /* PBXTextBookmark */ = {
+	3DD213A00C0C87480051AF4B /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 3DDCC5160C060700003AE690 /* PortsHelper.c */;
-		name = "PortsHelper.c: 36";
-		rLen = 0;
-		rLoc = 621;
+		fRef = 3D22B42E0C0317BA007DDDB5 /* PNController.h */;
+		name = "- (NSArray *)availableIntervals;";
+		rLen = 32;
+		rLoc = 856;
 		rType = 0;
-		vrLen = 761;
-		vrLoc = 294;
+		vrLen = 894;
+		vrLoc = 0;
+	};
+	3DD213A10C0C87480051AF4B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3DD213390C0C82FE0051AF4B /* PNPerferencesPanel.m */;
+		name = "PNPerferencesPanel.m: 23";
+		rLen = 0;
+		rLoc = 355;
+		rType = 0;
+		vrLen = 529;
+		vrLoc = 0;
+	};
+	3DD213B30C0C886E0051AF4B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3D22B42D0C0317BA007DDDB5 /* PNController.m */;
+		name = "PNController.m: 115";
+		rLen = 0;
+		rLoc = 2839;
+		rType = 0;
+		vrLen = 923;
+		vrLoc = 2350;
+	};
+	3DD213B40C0C886E0051AF4B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3DD1819E0C0343F200D19538 /* PNPortWrapper.h */;
+		name = "PNPortWrapper.h: executeByRoot:withArgs:";
+		rLen = 0;
+		rLoc = 592;
+		rType = 0;
+		vrLen = 676;
+		vrLoc = 0;
+	};
+	3DD213B50C0C886E0051AF4B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3D22B42E0C0317BA007DDDB5 /* PNController.h */;
+		name = "- (NSArray *)availableIntervals;";
+		rLen = 32;
+		rLoc = 856;
+		rType = 0;
+		vrLen = 894;
+		vrLoc = 0;
+	};
+	3DD213B60C0C886E0051AF4B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3DD213390C0C82FE0051AF4B /* PNPerferencesPanel.m */;
+		name = "PNPerferencesPanel.m: 23";
+		rLen = 0;
+		rLoc = 355;
+		rType = 0;
+		vrLen = 529;
+		vrLoc = 0;
 	};
 	3DDCC5160C060700003AE690 /* PortsHelper.c */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1126, 1326}}";
-			sepNavSelRange = "{621, 0}";
-			sepNavVisRect = "{{0, 238}, {1126, 645}}";
-			sepNavWindowFrame = "{{15, 55}, {1171, 718}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1126, 3077}}";
+			sepNavSelRange = "{2371, 0}";
+			sepNavVisRect = "{{0, 1240}, {1126, 645}}";
+			sepNavWindowFrame = "{{300, 60}, {1171, 718}}";
 		};
 	};
 	3DDCC51A0C060721003AE690 /* PortsHelper */ = {
