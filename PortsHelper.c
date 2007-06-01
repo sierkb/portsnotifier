@@ -16,6 +16,7 @@
 
 #include "PNDefines.h"
 
+
 void WritePropertyListToFile( CFPropertyListRef propertyList,
             CFURLRef fileURL ) {
    CFDataRef xmlData;
@@ -35,6 +36,7 @@ void WritePropertyListToFile( CFPropertyListRef propertyList,
    CFRelease(xmlData);
 }
 
+/// load property list form file that named from fileURL
 CFPropertyListRef CreatePropertyListFromFile( CFURLRef fileURL ) {
 
    CFPropertyListRef propertyList;
@@ -64,11 +66,13 @@ CFPropertyListRef CreatePropertyListFromFile( CFURLRef fileURL ) {
 
 }
 
+/// check if the ports in installed
 int pn_is_ports_installed(void)
 {
 	return access(PN_PORT_PATH, F_OK) < 0 ? 0 : 1;
 }
 
+/// sync the ports
 int pn_sync_ports(void)
 {
 	if(!pn_is_ports_installed())
@@ -78,6 +82,8 @@ int pn_sync_ports(void)
 	return system("/opt/local/bin/port selfupdate");
 }
 
+
+/// create the property list for launchd
 CFDictionaryRef pn_create_launchd_plist(int interval){
 	CFMutableDictionaryRef dict;
 	CFNumberRef num;
@@ -115,6 +121,7 @@ CFDictionaryRef pn_create_launchd_plist(int interval){
 	return dict;
 }
 
+/// write launchd plist with new startInterval	
 int pn_write_plist(int interval)
 {
 	if(interval < 0) 
