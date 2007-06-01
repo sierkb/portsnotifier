@@ -15,7 +15,7 @@
 		addToTargets = (
 		);
 		breakpoints = (
-			3DD212DC0C0C71610051AF4B /* PortsHelper.c:135 */,
+			3DD212DC0C0C71610051AF4B /* PortsHelper.c:142 */,
 		);
 		breakpointsGroup = 3DD182530C034F3800D19538 /* XCBreakpointsBucket */;
 		codeSenseManager = 3D22B42B0C0314CB007DDDB5 /* Code sense */;
@@ -160,22 +160,38 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 202147922;
-			PBXWorkspaceStateSaveDate = 202147922;
+			PBXPerProjectTemplateStateSaveDate = 202403603;
+			PBXWorkspaceStateSaveDate = 202403603;
 		};
 		perUserProjectItems = {
-			3DD2139E0C0C87480051AF4B /* PBXTextBookmark */ = 3DD2139E0C0C87480051AF4B /* PBXTextBookmark */;
-			3DD2139F0C0C87480051AF4B /* PBXTextBookmark */ = 3DD2139F0C0C87480051AF4B /* PBXTextBookmark */;
-			3DD213A00C0C87480051AF4B /* PBXTextBookmark */ = 3DD213A00C0C87480051AF4B /* PBXTextBookmark */;
-			3DD213A10C0C87480051AF4B /* PBXTextBookmark */ = 3DD213A10C0C87480051AF4B /* PBXTextBookmark */;
-			3DD213B30C0C886E0051AF4B /* PBXTextBookmark */ = 3DD213B30C0C886E0051AF4B /* PBXTextBookmark */;
-			3DD213B40C0C886E0051AF4B /* PBXTextBookmark */ = 3DD213B40C0C886E0051AF4B /* PBXTextBookmark */;
-			3DD213B50C0C886E0051AF4B /* PBXTextBookmark */ = 3DD213B50C0C886E0051AF4B /* PBXTextBookmark */;
-			3DD213B60C0C886E0051AF4B /* PBXTextBookmark */ = 3DD213B60C0C886E0051AF4B /* PBXTextBookmark */;
+			3D1FB8DC0C106F2A00B5D556 /* PBXTextBookmark */ = 3D1FB8DC0C106F2A00B5D556 /* PBXTextBookmark */;
+			3D1FB8DD0C106F2A00B5D556 /* PBXTextBookmark */ = 3D1FB8DD0C106F2A00B5D556 /* PBXTextBookmark */;
+			3D47C6360C0F0AB100B814B6 /* PBXTextBookmark */ = 3D47C6360C0F0AB100B814B6 /* PBXTextBookmark */;
+			3D47C6370C0F0AB100B814B6 /* PBXTextBookmark */ = 3D47C6370C0F0AB100B814B6 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 3D22B42A0C0314CB007DDDB5 /* Source Control */;
 		userBuildSettings = {
 		};
+	};
+	3D1FB8DC0C106F2A00B5D556 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3DD1819E0C0343F200D19538 /* PNPortWrapper.h */;
+		name = "PNPortWrapper.h: executeByRoot:withArgs:";
+		rLen = 0;
+		rLoc = 592;
+		rType = 0;
+		vrLen = 676;
+		vrLoc = 0;
+	};
+	3D1FB8DD0C106F2A00B5D556 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3DD213390C0C82FE0051AF4B /* PNPerferencesPanel.m */;
+		name = "PNPerferencesPanel.m: 23";
+		rLen = 0;
+		rLoc = 355;
+		rType = 0;
+		vrLen = 529;
+		vrLoc = 0;
 	};
 	3D22B42A0C0314CB007DDDB5 /* Source Control */ = {
 		isa = PBXSourceControlManager;
@@ -193,17 +209,37 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1126, 5134}}";
 			sepNavSelRange = "{2839, 0}";
-			sepNavVisRect = "{{0, 1649}, {1126, 654}}";
+			sepNavVisRect = "{{0, 9}, {1126, 654}}";
 			sepNavWindowFrame = "{{31, 51}, {1171, 727}}";
 		};
 	};
 	3D22B42E0C0317BA007DDDB5 /* PNController.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1126, 645}}";
-			sepNavSelRange = "{856, 32}";
+			sepNavSelRange = "{288, 0}";
 			sepNavVisRect = "{{0, 0}, {1126, 645}}";
 			sepNavWindowFrame = "{{125, 53}, {1171, 718}}";
 		};
+	};
+	3D47C6360C0F0AB100B814B6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3DD1819E0C0343F200D19538 /* PNPortWrapper.h */;
+		name = "PNPortWrapper.h: executeByRoot:withArgs:";
+		rLen = 0;
+		rLoc = 592;
+		rType = 0;
+		vrLen = 676;
+		vrLoc = 0;
+	};
+	3D47C6370C0F0AB100B814B6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3DD213390C0C82FE0051AF4B /* PNPerferencesPanel.m */;
+		name = "PNPerferencesPanel.m: 23";
+		rLen = 0;
+		rLoc = 355;
+		rType = 0;
+		vrLen = 529;
+		vrLoc = 0;
 	};
 	3D58E5200C0899F2004CE3E1 /* org.xulei.portsnotifier.plist */ = {
 		uiCtxt = {
@@ -299,7 +335,7 @@
 		isa = XCBreakpointsBucket;
 		name = "Project Breakpoints";
 		objects = (
-			3DD212DC0C0C71610051AF4B /* PortsHelper.c:135 */,
+			3DD212DC0C0C71610051AF4B /* PortsHelper.c:142 */,
 		);
 	};
 	3DD212670C0C67940051AF4B /* PNDefines.h */ = {
@@ -310,7 +346,7 @@
 			sepNavWindowFrame = "{{15, 46}, {1171, 727}}";
 		};
 	};
-	3DD212DC0C0C71610051AF4B /* PortsHelper.c:135 */ = {
+	3DD212DC0C0C71610051AF4B /* PortsHelper.c:142 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -320,7 +356,7 @@
 		fileReference = 3DDCC5160C060700003AE690 /* PortsHelper.c */;
 		functionName = "pn_write_plist()";
 		hitCount = 1;
-		lineNumber = 135;
+		lineNumber = 142;
 		modificationTime = 202145334.480487;
 		state = 2;
 	};
@@ -340,92 +376,12 @@
 			sepNavWindowFrame = "{{30, 51}, {1171, 727}}";
 		};
 	};
-	3DD2139E0C0C87480051AF4B /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3D22B42D0C0317BA007DDDB5 /* PNController.m */;
-		name = "PNController.m: 115";
-		rLen = 0;
-		rLoc = 2839;
-		rType = 0;
-		vrLen = 923;
-		vrLoc = 2350;
-	};
-	3DD2139F0C0C87480051AF4B /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3DD1819E0C0343F200D19538 /* PNPortWrapper.h */;
-		name = "PNPortWrapper.h: executeByRoot:withArgs:";
-		rLen = 0;
-		rLoc = 592;
-		rType = 0;
-		vrLen = 676;
-		vrLoc = 0;
-	};
-	3DD213A00C0C87480051AF4B /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3D22B42E0C0317BA007DDDB5 /* PNController.h */;
-		name = "- (NSArray *)availableIntervals;";
-		rLen = 32;
-		rLoc = 856;
-		rType = 0;
-		vrLen = 894;
-		vrLoc = 0;
-	};
-	3DD213A10C0C87480051AF4B /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3DD213390C0C82FE0051AF4B /* PNPerferencesPanel.m */;
-		name = "PNPerferencesPanel.m: 23";
-		rLen = 0;
-		rLoc = 355;
-		rType = 0;
-		vrLen = 529;
-		vrLoc = 0;
-	};
-	3DD213B30C0C886E0051AF4B /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3D22B42D0C0317BA007DDDB5 /* PNController.m */;
-		name = "PNController.m: 115";
-		rLen = 0;
-		rLoc = 2839;
-		rType = 0;
-		vrLen = 923;
-		vrLoc = 2350;
-	};
-	3DD213B40C0C886E0051AF4B /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3DD1819E0C0343F200D19538 /* PNPortWrapper.h */;
-		name = "PNPortWrapper.h: executeByRoot:withArgs:";
-		rLen = 0;
-		rLoc = 592;
-		rType = 0;
-		vrLen = 676;
-		vrLoc = 0;
-	};
-	3DD213B50C0C886E0051AF4B /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3D22B42E0C0317BA007DDDB5 /* PNController.h */;
-		name = "- (NSArray *)availableIntervals;";
-		rLen = 32;
-		rLoc = 856;
-		rType = 0;
-		vrLen = 894;
-		vrLoc = 0;
-	};
-	3DD213B60C0C886E0051AF4B /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3DD213390C0C82FE0051AF4B /* PNPerferencesPanel.m */;
-		name = "PNPerferencesPanel.m: 23";
-		rLen = 0;
-		rLoc = 355;
-		rType = 0;
-		vrLen = 529;
-		vrLoc = 0;
-	};
 	3DDCC5160C060700003AE690 /* PortsHelper.c */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1126, 3077}}";
-			sepNavSelRange = "{2371, 0}";
-			sepNavVisRect = "{{0, 1240}, {1126, 645}}";
-			sepNavWindowFrame = "{{300, 60}, {1171, 718}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1126, 3196}}";
+			sepNavSelRange = "{3396, 0}";
+			sepNavVisRect = "{{0, 2551}, {1126, 645}}";
+			sepNavWindowFrame = "{{61, 60}, {1171, 718}}";
 		};
 	};
 	3DDCC51A0C060721003AE690 /* PortsHelper */ = {

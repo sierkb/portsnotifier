@@ -190,46 +190,6 @@
 			<key>Content</key>
 			<dict>
 				<key>PBXProjectModuleGUID</key>
-				<string>3DD2124E0C0C668F0051AF4B</string>
-				<key>PBXProjectModuleLabel</key>
-				<string>PNController.m</string>
-				<key>PBXSplitModuleInNavigatorKey</key>
-				<dict>
-					<key>Split0</key>
-					<dict>
-						<key>PBXProjectModuleGUID</key>
-						<string>3DD2124F0C0C668F0051AF4B</string>
-						<key>PBXProjectModuleLabel</key>
-						<string>PNController.m</string>
-						<key>_historyCapacity</key>
-						<integer>0</integer>
-						<key>bookmark</key>
-						<string>3DD213B30C0C886E0051AF4B</string>
-						<key>history</key>
-						<array>
-							<string>3DD2139E0C0C87480051AF4B</string>
-						</array>
-					</dict>
-					<key>SplitCount</key>
-					<string>1</string>
-				</dict>
-				<key>StatusBarVisibility</key>
-				<true/>
-			</dict>
-			<key>Geometry</key>
-			<dict>
-				<key>Frame</key>
-				<string>{{0, 20}, {1171, 686}}</string>
-				<key>PBXModuleWindowStatusBarHidden2</key>
-				<false/>
-				<key>RubberWindowFrame</key>
-				<string>31 51 1171 727 0 0 1280 778 </string>
-			</dict>
-		</dict>
-		<dict>
-			<key>Content</key>
-			<dict>
-				<key>PBXProjectModuleGUID</key>
 				<string>3DD2136C0C0C86AF0051AF4B</string>
 				<key>PBXProjectModuleLabel</key>
 				<string>PNPortWrapper.h</string>
@@ -244,10 +204,10 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>3DD213B40C0C886E0051AF4B</string>
+						<string>3D1FB8DC0C106F2A00B5D556</string>
 						<key>history</key>
 						<array>
-							<string>3DD2139F0C0C87480051AF4B</string>
+							<string>3D47C6360C0F0AB100B814B6</string>
 						</array>
 					</dict>
 					<key>SplitCount</key>
@@ -270,46 +230,6 @@
 			<key>Content</key>
 			<dict>
 				<key>PBXProjectModuleGUID</key>
-				<string>3DD213570C0C86540051AF4B</string>
-				<key>PBXProjectModuleLabel</key>
-				<string>PNController.h</string>
-				<key>PBXSplitModuleInNavigatorKey</key>
-				<dict>
-					<key>Split0</key>
-					<dict>
-						<key>PBXProjectModuleGUID</key>
-						<string>3DD213580C0C86540051AF4B</string>
-						<key>PBXProjectModuleLabel</key>
-						<string>PNController.h</string>
-						<key>_historyCapacity</key>
-						<integer>0</integer>
-						<key>bookmark</key>
-						<string>3DD213B50C0C886E0051AF4B</string>
-						<key>history</key>
-						<array>
-							<string>3DD213A00C0C87480051AF4B</string>
-						</array>
-					</dict>
-					<key>SplitCount</key>
-					<string>1</string>
-				</dict>
-				<key>StatusBarVisibility</key>
-				<true/>
-			</dict>
-			<key>Geometry</key>
-			<dict>
-				<key>Frame</key>
-				<string>{{0, 20}, {1171, 677}}</string>
-				<key>PBXModuleWindowStatusBarHidden2</key>
-				<false/>
-				<key>RubberWindowFrame</key>
-				<string>125 53 1171 718 0 0 1280 778 </string>
-			</dict>
-		</dict>
-		<dict>
-			<key>Content</key>
-			<dict>
-				<key>PBXProjectModuleGUID</key>
 				<string>3DD2135B0C0C86540051AF4B</string>
 				<key>PBXProjectModuleLabel</key>
 				<string>PNPerferencesPanel.m</string>
@@ -324,10 +244,10 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>3DD213B60C0C886E0051AF4B</string>
+						<string>3D1FB8DD0C106F2A00B5D556</string>
 						<key>history</key>
 						<array>
-							<string>3DD213A10C0C87480051AF4B</string>
+							<string>3D47C6370C0F0AB100B814B6</string>
 						</array>
 					</dict>
 					<key>SplitCount</key>
@@ -431,8 +351,9 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>26</integer>
-									<integer>25</integer>
+									<integer>5</integer>
+									<integer>3</integer>
+									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
@@ -536,9 +457,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>3DD213B10C0C886E0051AF4B</string>
+				<string>3D1FB8DA0C106F2A00B5D556</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>3DD213B20C0C886E0051AF4B</string>
+				<string>3D1FB8DB0C106F2A00B5D556</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -672,13 +593,11 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>3DD213BD0C0C886E0051AF4B</string>
+		<string>3D1FB8E40C106F2A00B5D556</string>
 		<string>3DD2135B0C0C86540051AF4B</string>
 		<string>1CD10A99069EF8BA00B06720</string>
-		<string>3DD213570C0C86540051AF4B</string>
 		<string>3DD2136C0C0C86AF0051AF4B</string>
 		<string>1C0AD2B3069F1EA900FABCE6</string>
-		<string>3DD2124E0C0C668F0051AF4B</string>
 		<string>/Users/eddyxu/work/PortsNotifier/PortsNotifier.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -805,8 +724,8 @@
 										<string>yes</string>
 										<key>sizes</key>
 										<array>
-											<string>{{0, 0}, {287, 215}}</string>
-											<string>{{287, 0}, {424, 215}}</string>
+											<string>{{0, 0}, {282, 215}}</string>
+											<string>{{282, 0}, {429, 215}}</string>
 										</array>
 									</dict>
 									<key>VerticalSplitView</key>
@@ -869,14 +788,14 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>3DD213B70C0C886E0051AF4B</string>
+				<string>3D1FB8DE0C106F2A00B5D556</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>3DD213B80C0C886E0051AF4B</string>
-				<string>3DD213B90C0C886E0051AF4B</string>
-				<string>3DD213BA0C0C886E0051AF4B</string>
-				<string>3DD213BB0C0C886E0051AF4B</string>
-				<string>3DD213BC0C0C886E0051AF4B</string>
-				<string>3DD213BD0C0C886E0051AF4B</string>
+				<string>3D1FB8DF0C106F2A00B5D556</string>
+				<string>3D1FB8E00C106F2A00B5D556</string>
+				<string>3D1FB8E10C106F2A00B5D556</string>
+				<string>3D1FB8E20C106F2A00B5D556</string>
+				<string>3D1FB8E30C106F2A00B5D556</string>
+				<string>3D1FB8E40C106F2A00B5D556</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debug</string>
@@ -1133,9 +1052,9 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C0AD2B3069F1EA900FABCE6</string>
-				<string>3DD213BE0C0C886E0051AF4B</string>
+				<string>3D1FB8E50C106F2A00B5D556</string>
 				<string>1CD0528B0623707200166675</string>
-				<string>3DD213BF0C0C886E0051AF4B</string>
+				<string>3D1FB8E60C106F2A00B5D556</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.run</string>
@@ -1480,6 +1399,8 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>OptionsSetName</key>
@@ -1516,7 +1437,7 @@
 									<real>22</real>
 								</array>
 								<key>RubberWindowFrame</key>
-								<string>21 403 630 352 0 0 1280 778 </string>
+								<string>406 373 630 352 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXClassBrowserModule</string>
@@ -1538,16 +1459,16 @@
 			<false/>
 			<key>TableOfContents</key>
 			<array>
-				<string>1C0AD2AF069F1E9B00FABCE6</string>
-				<string>3DCBB35C0C031D9300ED3D65</string>
+				<string>3D5490C50C0DDE4C003EB7DD</string>
+				<string>3D5490C60C0DDE4C003EB7DD</string>
 				<string>1CA6456E063B45B4001379D8</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.classbrowser</string>
 			<key>WindowString</key>
-			<string>21 403 630 352 0 0 1280 778 </string>
+			<string>406 373 630 352 0 0 1280 778 </string>
 			<key>WindowToolGUID</key>
-			<string>1C0AD2AF069F1E9B00FABCE6</string>
+			<string>3D5490C50C0DDE4C003EB7DD</string>
 			<key>WindowToolIsVisible</key>
 			<false/>
 		</dict>
