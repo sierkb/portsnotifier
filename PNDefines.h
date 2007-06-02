@@ -13,7 +13,7 @@
 #define PN_HELPER_PATH "/usr/local/bin/PortsHelper"
 #define PN_PORT_PATH "/opt/local/bin/port"
 #define PN_PORT_SYNC "/opt/local/bin/port selfupdate"
-#define PN_LAUNCHD_PLIST "/System/Library/LaunchDaemons/org.xulei.portsnotifier.plist"
-#define PN_APP_ID "org.xulei.portsnotifier"
+#define PN_LAUNCHD_PLIST "/System/Library/LaunchDaemons/net.sourceforge.portsnotifier.plist"
+#define PN_APP_ID "net.sourceforge.portsnotifier"
 
 #endif

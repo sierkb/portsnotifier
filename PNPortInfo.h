@@ -1,4 +1,12 @@
-/* PNPortInfo */
+/**
+ * @file PNPortInfo.h 
+ * 
+ * @brief interface for port information
+ *
+ * @id $Id
+ *
+ * @author: eddyxu@gmail.com
+ * */
 
 #import <Cocoa/Cocoa.h>
 

@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3D0566C70C0B2DEF000A19CA /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D0566C60C0B2DEF000A19CA /* Security.framework */; };
-		3DC24E030C09C9A3001F1791 /* org.xulei.portsnotifier.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D58E5200C0899F2004CE3E1 /* org.xulei.portsnotifier.plist */; };
+		3DC24E030C09C9A3001F1791 /* net.sourceforge.portsnotifier.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D58E5200C0899F2004CE3E1 /* net.sourceforge.portsnotifier.plist */; };
 		3DC24E040C09C9A3001F1791 /* StatusBarLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DCBB3560C031D4D00ED3D65 /* StatusBarLogo.png */; };
 		3DC24E050C09C9A3001F1791 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D1107310486CEB800E47090 /* Info.plist */; };
 		3DC24E060C09C9A3001F1791 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
@@ -50,7 +50,7 @@
 		3D22B42D0C0317BA007DDDB5 /* PNController.m */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.objc; path = PNController.m; sourceTree = "<group>"; };
 		3D22B42E0C0317BA007DDDB5 /* PNController.h */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.h; path = PNController.h; sourceTree = "<group>"; };
 		3D461D390C04BAB50068D9F7 /* SecurityFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SecurityFoundation.framework; path = /System/Library/Frameworks/SecurityFoundation.framework; sourceTree = "<absolute>"; };
-		3D58E5200C0899F2004CE3E1 /* org.xulei.portsnotifier.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = org.xulei.portsnotifier.plist; sourceTree = "<group>"; };
+		3D58E5200C0899F2004CE3E1 /* net.sourceforge.portsnotifier.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = net.sourceforge.portsnotifier.plist; sourceTree = "<group>"; };
 		3DC24DFD0C09C996001F1791 /* PortsNotifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PortsNotifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DC24E370C09CEFB001F1791 /* StatusBarLogoNoAvailable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StatusBarLogoNoAvailable.png; sourceTree = "<group>"; };
 		3DCBB3560C031D4D00ED3D65 /* StatusBarLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StatusBarLogo.png; sourceTree = "<group>"; };
@@ -160,7 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				3DC24E370C09CEFB001F1791 /* StatusBarLogoNoAvailable.png */,
-				3D58E5200C0899F2004CE3E1 /* org.xulei.portsnotifier.plist */,
+				3D58E5200C0899F2004CE3E1 /* net.sourceforge.portsnotifier.plist */,
 				3DCBB3560C031D4D00ED3D65 /* StatusBarLogo.png */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
@@ -256,7 +256,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DC24E030C09C9A3001F1791 /* org.xulei.portsnotifier.plist in Resources */,
+				3DC24E030C09C9A3001F1791 /* net.sourceforge.portsnotifier.plist in Resources */,
 				3DC24E040C09C9A3001F1791 /* StatusBarLogo.png in Resources */,
 				3DC24E050C09C9A3001F1791 /* Info.plist in Resources */,
 				3DC24E060C09C9A3001F1791 /* InfoPlist.strings in Resources */,
