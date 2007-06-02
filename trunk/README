@@ -1,0 +1,12 @@
+ Ports Notifier
+==============================
+
+PortsNotifier is a notifier for macports(http://www.macports.com)
+
+
+ Requirement
+=============================
+
+To run PortsNotifier, you should install macports first.
+
+
