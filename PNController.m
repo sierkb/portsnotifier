@@ -196,8 +196,9 @@ finish:
 
 - (IBAction)goPortsNotifierSite:(id)sender
 {
-	NSLog(@"Open PortsNotifer site: http://www.xulei.org/projects/portsnotifier.html");
-	[self goURL:@"http://www.xulei.org/projects/portsnotifier.html"];
+	NSString *url = @"http://portsnotifier.sourceforge.net";
+	NSLog(@"Open PortsNotifer site: %@", url);
+	[self goURL:url];
 }
 
 - (IBAction)goDonateSite:(id)sender
