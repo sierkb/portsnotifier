@@ -1,10 +1,11 @@
 //
 //  main.m
-//  PortsNotifier
+//  PortsNotifier -- notifier for macports
 //
-//  Created by ? ? on 07-5-22.
-//  Copyright __MyCompanyName__ 2007. All rights reserved.
+//  Created by eddyxu@gmail.com on 07-5-22.
+//  Copyright PortsNotifier.sourceforge.net 007. All rights reserved.
 //
+//  $Id$
 
 #import <Cocoa/Cocoa.h>
 

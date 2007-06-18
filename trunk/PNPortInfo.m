@@ -1,3 +1,13 @@
+/**
+ * @file PNPortInfo.h
+ *
+ * @brief implement file for class PNPortInfo
+ *
+ * @author eddyxu@gmail.com
+ *
+ * $Id$
+ */
+
 #import "PNPortInfo.h"
 
 @implementation PNPortInfo
@@ -25,7 +35,7 @@
 	@catch (NSException * e) {
 		title = nil;
 		return self;
-	}
+	} 
 	@finally {
 		
 	}
