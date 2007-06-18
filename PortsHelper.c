@@ -2,8 +2,8 @@
  *  PortsHelper.c
  *  PortsNotifier
  *
- *  Created by lei.xu@gmail.com on 07-5-25.
- *  Copyright 2007 xulei.org All rights reserved.
+ *  Created by eddyxu@gmail.com on 07-5-25.
+ *  Copyright 2007 portsnotifier.sf.net All rights reserved.
  *
  *  PortsNotifier is released under BSD License
  */
@@ -16,7 +16,13 @@
 
 #include "PNDefines.h"
 
-
+/**
+ * @brief store property list to file
+ *
+ * @param propertyList a reference to property list
+ * @param fileURL url of file location
+ *
+ */
 void WritePropertyListToFile( CFPropertyListRef propertyList,
             CFURLRef fileURL ) {
    CFDataRef xmlData;

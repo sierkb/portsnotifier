@@ -1,7 +1,7 @@
 /**
  * @file PNPortInfo.h 
  * 
- * @brief interface for port information
+ * @brief interface for port information class
  *
  * @id $Id
  *

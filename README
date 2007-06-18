@@ -1,12 +1,18 @@
- Ports Notifier
-==============================
+  PortsNotifier
+====================
 
-PortsNotifier is a notifier for macports(http://www.macports.com)
+Notifier for macports(http://www.macports.org)
+
+ Uninstall
+===================
+In order to uninstall portsnotifier cleanly, you should delete those files manually.
+
+ 1. /Applications/PortsNotifier
+ 2. /usr/local/bin/PortsHelper
+ 3. /System/Library/LaunchDaemons/net.sourceforge.portsnotifier.plist
 
 
- Requirement
-=============================
-
-To run PortsNotifier, you should install macports first.
-
-
+ Feedback
+==================
+Feel free to send any feedback to me:
+eddyxu@gmail.com

@@ -2,9 +2,12 @@
 
 #import <Cocoa/Cocoa.h>
 
+/*
+	Main Controller for Ports Notifier App
+*/
 @interface PNController : NSObject
 {
-    IBOutlet id portsManager;
+    IBOutlet id portsManager;	
     IBOutlet NSStatusItem *statusItem;
     IBOutlet NSMenu *statusMenu;
 	IBOutlet NSPanel *preferencePanel;
