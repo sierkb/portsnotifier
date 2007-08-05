@@ -78,7 +78,7 @@
 	BOOL isInstalled = [PNPortWrapper isMacPortsInstalled];
 	if(isInstalled == FALSE){
 		[statusItem setImage:[NSImage imageNamed:@"StatusBarLogoNoAvailable"]];
-		[[statusMenu itemAtIndex:2] setAction:NULL];
+		[[statusMenu itemAtIndex:0] setAction:NULL];
 	}else{
 		[portsManager updatePorts];
 		unsigned portsCount;
@@ -103,10 +103,10 @@
 	NSLog(@"In thread sync");
 	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
 	
-	NSString *syncing = @"Syncing..";
-	NSMenuItem *syncMenuItem = [statusMenu itemAtIndex:2];
+	NSString *syncing = @"Syncing...";
+	NSMenuItem *syncMenuItem = [statusMenu itemAtIndex:0];
 	if([[syncMenuItem title] isEqualToString:syncing]){
-		NSLog(@"It is being syncing");
+		NSLog(@"It is being synced");
 		goto finish;
 	}
 	
@@ -129,7 +129,7 @@ finish:
 	//unsigned startPos = 2;
 	unsigned i;
 	while(1){
-		NSMenuItem *item = [statusMenu itemAtIndex:3];
+		NSMenuItem *item = [statusMenu itemAtIndex:1];
 		if(item == nil)
 			break;
 		if([item tag] == 1)
@@ -145,14 +145,14 @@ finish:
 		}
 		NSLog(@"Delete menu");
 		//NSLog(@"%@",[item title]);
-		[statusMenu removeItemAtIndex:3];
+		[statusMenu removeItemAtIndex:1];
 		//[item release];
 	}
 	
 	
 	NSArray *outdatedPorts = [portsManager ports];
 	unsigned maxMenuItem = 3;
-	unsigned startInsertPos = 4;
+	unsigned startInsertPos = 2;
 	unsigned count = [outdatedPorts count];
 	
 	if(count == 0)
@@ -163,7 +163,7 @@ finish:
 	
 
 	NSMenuItem *sp = [NSMenuItem separatorItem];
-	[statusMenu insertItem:sp atIndex:3];	
+	[statusMenu insertItem:sp atIndex:1];	
 	for( i = 0; i < displayCount; i++){
 		PNPortInfo *port = [outdatedPorts objectAtIndex:i];
 		NSMutableString *title = [NSMutableString stringWithFormat:@"%@ %@ < %@",
