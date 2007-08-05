@@ -150,7 +150,7 @@ int pn_write_plist(int interval)
 
 void pn_usage(void)
 {
-	printf("PortsHelper -- Helper for PortsNotifier\n");
+	printf("PortsHelper -- Helper for MacPorts Notifier\n");
 	printf("Usage: PortsHelper [OPTIONS]\n");
 	printf("Options:\n");
 	printf("-i <minutes>\t\tsetting the interval of calling helper by launchd\n");

@@ -59,7 +59,7 @@
 		3D92B1DC0C218DC5005343B8 /* StatusBarLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StatusBarLogo.png; sourceTree = "<group>"; };
 		3D92B1E70C2195FA005343B8 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
 		3D92B1F00C219756005343B8 /* NotifierIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = NotifierIcon.icns; sourceTree = "<group>"; };
-		3DC24DFD0C09C996001F1791 /* PortsNotifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PortsNotifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DC24DFD0C09C996001F1791 /* MacPorts Notifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MacPorts Notifier.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DC24E370C09CEFB001F1791 /* StatusBarLogoNoAvailable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StatusBarLogoNoAvailable.png; sourceTree = "<group>"; };
 		3DCBB3E40C032D7800ED3D65 /* PNPortInfo.h */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.h; path = PNPortInfo.h; sourceTree = "<group>"; };
 		3DCBB3E50C032D7800ED3D65 /* PNPortInfo.m */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.objc; path = PNPortInfo.m; sourceTree = "<group>"; };
@@ -136,7 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				3DDCC51B0C060721003AE690 /* PortsHelper */,
-				3DC24DFD0C09C996001F1791 /* PortsNotifier.app */,
+				3DC24DFD0C09C996001F1791 /* MacPorts Notifier.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -227,7 +227,7 @@
 			);
 			name = PortsNotifier;
 			productName = PortsNotifier;
-			productReference = 3DC24DFD0C09C996001F1791 /* PortsNotifier.app */;
+			productReference = 3DC24DFD0C09C996001F1791 /* MacPorts Notifier.app */;
 			productType = "com.apple.product-type.application";
 		};
 		3DDCC51A0C060721003AE690 /* PortsHelper */ = {
@@ -353,7 +353,7 @@
 					AppKit,
 				);
 				PREBINDING = NO;
-				PRODUCT_NAME = PortsNotifier;
+				PRODUCT_NAME = "MacPorts Notifier";
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = YES;
 			};
@@ -377,7 +377,7 @@
 					AppKit,
 				);
 				PREBINDING = NO;
-				PRODUCT_NAME = PortsNotifier;
+				PRODUCT_NAME = "MacPorts Notifier";
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = NO;
 			};
