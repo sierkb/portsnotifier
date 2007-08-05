@@ -39,6 +39,9 @@
     [statusItem setHighlightMode:YES];
     [statusItem setMenu:statusMenu];
 
+	// set interval NSPopUpButton in Preferences window
+	[intervalMenu selectItemWithTag:[self intervalMinutes]];
+	
 	// query for start up
 	[self queryByTimer:nil];
 	unsigned intervalSeconds = [self intervalMinutes] * 60;
@@ -271,27 +274,10 @@ finish:
 - (IBAction) savePreferences:(id)sender
 {
 	NSLog(@"Save preferences");
-	NSString *intString = [intervalField stringValue];
-	NSLog(@"Get interval: %@", intString);
-	
-	int intervalValue = 10;
-	if([intString isEqualToString:@"10 minutes"]){
-		intervalValue = 10;
-	}else if([intString isEqualToString:@"20 minutes"]){
-		intervalValue = 20;
-	}else if([intString isEqualToString:@"30 minutes"]){
-		intervalValue = 30;
-	}else if([intString isEqualToString:@"1 hour"]){
-		intervalValue = 60;
-	}else if([intString isEqualToString:@"2 hours"]){
-		intervalValue = 120;
-	}else if([intString isEqualToString:@"1 day"]){
-		intervalValue = 24 * 60;
-	};
-	
-	char const*argv[] = {"-i", [[NSString stringWithFormat:@"%d", intervalValue] cString], NULL};
+	NSLog(@"Get interval: %@", [[intervalMenu selectedItem] title]);
+
+	char const*argv[] = {"-i", [[NSString stringWithFormat:@"%d", [intervalMenu selectedTag]] cString], NULL};
 	[PNPortWrapper executeByRoot:PN_HELPER_PATH withArgs:argv];
-	[preferencePanel close];
 }
 
 - (NSArray*) availableIntervals
