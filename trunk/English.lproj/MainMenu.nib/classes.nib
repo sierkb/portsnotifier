@@ -13,7 +13,7 @@
             CLASS = PNController; 
             LANGUAGE = ObjC; 
             OUTLETS = {
-                intervalField = NSTextField; 
+                intervalMenu = NSPopUpButton; 
                 portsManager = id; 
                 preferencePanel = NSPanel; 
                 statusItem = NSStatusItem; 

@@ -11,7 +11,7 @@
     IBOutlet NSStatusItem *statusItem;
     IBOutlet NSMenu *statusMenu;
 	IBOutlet NSPanel *preferencePanel;
-	IBOutlet NSTextField *intervalField;
+	IBOutlet NSPopUpButton *intervalMenu;
 	
 	NSTimer *queryPortsTimer;
 }
