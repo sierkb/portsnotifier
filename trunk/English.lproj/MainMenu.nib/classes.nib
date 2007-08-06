@@ -28,12 +28,6 @@
             OUTLETS = {perferencesPanel = NSPanel; secondBox = id; }; 
             SUPERCLASS = NSObject; 
         }, 
-        {
-            CLASS = PNPerferencesPanel; 
-            LANGUAGE = ObjC; 
-            OUTLETS = {controller = PNController; intervalBox = NSComboBox; }; 
-            SUPERCLASS = NSPanel; 
-        }, 
         {CLASS = PNPortInfo; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
         {CLASS = PNPortWrapper; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
         {CLASS = PNPortsManager; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
