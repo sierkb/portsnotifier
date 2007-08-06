@@ -40,11 +40,16 @@
     [statusItem setMenu:statusMenu];
 
 	// set interval NSPopUpButton in Preferences window
-	[intervalMenu selectItemWithTag:[self intervalMinutes]];
+	[intervalMenu selectItemWithTag:[self queryOutdatedIntervalAsMinutes]];
+	
+	// set About menu item target and action
+	// doing this here avoids having to create a NSApplication delegate in MainMenu.nib
+	[[statusMenu itemWithTag:1002] setTarget:NSApp];
+	[[statusMenu itemWithTag:1002] setAction:@selector(orderFrontStandardAboutPanel:)];
 	
 	// query for start up
 	[self queryByTimer:nil];
-	unsigned intervalSeconds = [self intervalMinutes] * 60;
+	unsigned intervalSeconds = [self queryOutdatedIntervalAsMinutes] * 60;
 	[self doQueryPortsLoop:intervalSeconds];
 	//[self queryOutdatedPortsInThread:nil];
 }	
@@ -199,9 +204,7 @@ finish:
 
 - (IBAction)goPortsNotifierSite:(id)sender
 {
-	NSString *url = @"http://portsnotifier.sourceforge.net";
-	NSLog(@"Open PortsNotifer site: %@", url);
-	[self goURL:url];
+	[[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://portsnotifier.sourceforge.net"]];
 }
 
 - (IBAction)goDonateSite:(id)sender
@@ -211,38 +214,15 @@ finish:
 
 - (IBAction)goMacPortsOrg:(id)sender
 {
-	NSLog(@"Open http://www.macports.org");
-	[self goURL:@"http://www.macports.org"];
+	[[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://www.macports.org"]];
 }
 
-- (void)goURL:(NSString*)urlString
+- (NSString *)queryOutdatedIntervalAsString
 {
-	if(urlString == nil){
-		return;
-	}
-	NSWorkspace *workspace = [[NSWorkspace alloc] init];
-	[workspace openURL:[NSURL URLWithString:urlString]];
-	[workspace release];
+	return [intervalMenu itemTitleAtIndex:[intervalMenu indexOfItemWithTag:[self queryOutdatedIntervalAsMinutes]]];
 }
 
-- (NSString *) intervalMinutesString
-{
-	
-	NSString *intervalString;
-	unsigned minute = [self intervalMinutes];
-	if(minute < 60)
-		intervalString = [NSString stringWithFormat:@"%d minutes", minute];
-	else if(minute == 60)
-		intervalString = @"1 hour";
-	else if(minute < 60*24)
-		intervalString = [NSString stringWithFormat:@"%d hours", (int)minute/60];
-	else 
-		intervalString = @"1 day";
-		
-	return intervalString;
-}
-
-- (unsigned) intervalMinutes
+- (unsigned)queryOutdatedIntervalAsMinutes
 {
 	unsigned defaultInterval = 30; // minutes;
 	
@@ -253,12 +233,14 @@ finish:
 	id plist;
 	plistData = [NSData dataWithContentsOfFile:path];
 	
+	NSLog([[NSDictionary dictionaryWithContentsOfFile:path] stringRepresentation]);
 	plist = [NSPropertyListSerialization propertyListFromData:plistData
 											 mutabilityOption:NSPropertyListImmutable
 													   format:&format
 											 errorDescription:&error];
 	if(!plist)
 	{
+		NSLog(@"Error reading plist");
 		NSLog(error);
 		[error release];
 	}

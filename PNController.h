@@ -14,7 +14,10 @@
 	IBOutlet NSPopUpButton *intervalMenu;
 	
 	NSTimer *queryPortsTimer;
+	
+	unsigned _queryOutdatedIntervalInMinutes;
 }
+
 - (void)doSyncInThread:(id)anObject;
 - (void)queryByTimer:(id)anObject;
 - (void)queryOutdatedPortsInThread:(id)argument;
@@ -28,10 +31,10 @@
 - (IBAction)goPortsNotifierSite:(id)sender;
 - (IBAction)goDonateSite:(id)sender;
 - (IBAction)goMacPortsOrg:(id)sender;
-- (void)goURL:(NSString *)urlString;
 
-- (unsigned) intervalMinutes;
-- (NSString *) intervalMinutesString;
-- (IBAction) savePreferences:(id)sender;
+- (unsigned)queryOutdatedIntervalAsMinutes;
+- (NSString *)queryOutdatedIntervalAsString;
+- (IBAction)savePreferences:(id)sender;
 - (NSArray *)availableIntervals;
+
 @end
