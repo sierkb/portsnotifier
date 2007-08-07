@@ -5,7 +5,7 @@
 <key>Label</key>
 <string>net.sourceforge.portsnotifier</string>
 <key>Program</key>
-<string>/usr/local/bin/PortsHelper</string>
+<string>/usr/local/bin/macports-sync-agent</string>
 <key>ServiceDescription</key>
 <string>Automatic update macport</string>
 <key>StandardErrorPath</key>

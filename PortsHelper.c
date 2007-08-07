@@ -150,18 +150,18 @@ int pn_write_plist(int interval)
 
 void pn_usage(void)
 {
-	printf("PortsHelper -- Helper for MacPorts Notifier\n");
-	printf("Usage: PortsHelper [OPTIONS]\n");
+	printf("macports-sync-agent -- Helper for MacPorts Notifier\n");
+	printf("Usage: macports-sync-agent [OPTIONS]\n");
 	printf("Options:\n");
 	printf("-i <minutes>\t\tsetting the interval of calling helper by launchd\n");
 	printf("-h\t\t\tdisplay this help\n");
-	printf("\nIf no options be provided, PortsHelper will do \"port sync\"\n");
+	printf("\nIf no options be provided, macports-sync-agent will do \"port sync\"\n");
 }
 
 int main(int argc, char * const argv[])
 {
 	
-	openlog("PortsHelper", (LOG_CONS|LOG_PERROR|LOG_PID), LOG_DAEMON);
+	openlog("macports-sync-agent", (LOG_CONS|LOG_PERROR|LOG_PID), LOG_DAEMON);
 	int ch, ret;
 	
 	while((ch = getopt(argc, argv, "hi:")) != -1){

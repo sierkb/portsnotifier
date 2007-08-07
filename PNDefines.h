@@ -10,7 +10,7 @@
 #ifndef PN_DEFINE_H
 #define PN_DEFINE_H
 
-#define PN_HELPER_PATH "/usr/local/bin/PortsHelper"
+#define PN_HELPER_PATH "/usr/local/bin/macports-sync-agent"
 #define PN_PORT_PATH "/opt/local/bin/port"
 #define PN_PORT_SYNC "/opt/local/bin/port selfupdate"
 #define PN_LAUNCHD_PLIST "/Library/LaunchDaemons/net.sourceforge.portsnotifier.plist"
