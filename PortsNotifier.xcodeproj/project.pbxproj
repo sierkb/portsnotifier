@@ -59,7 +59,7 @@
 		3D92B1DC0C218DC5005343B8 /* StatusBarLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StatusBarLogo.png; sourceTree = "<group>"; };
 		3D92B1E70C2195FA005343B8 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
 		3D92B1F00C219756005343B8 /* NotifierIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = NotifierIcon.icns; sourceTree = "<group>"; };
-		3DC24DFD0C09C996001F1791 /* MacPorts Notifier.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = "MacPorts Notifier.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DC24DFD0C09C996001F1791 /* MacPorts Notifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MacPorts Notifier.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DC24E370C09CEFB001F1791 /* StatusBarLogoNoAvailable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StatusBarLogoNoAvailable.png; sourceTree = "<group>"; };
 		3DCBB3E40C032D7800ED3D65 /* PNPortInfo.h */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.h; path = PNPortInfo.h; sourceTree = "<group>"; };
 		3DCBB3E50C032D7800ED3D65 /* PNPortInfo.m */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.objc; path = PNPortInfo.m; sourceTree = "<group>"; };
@@ -346,7 +346,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_MODEL_TUNING = G5;
+				GCC_MODEL_TUNING = "";
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
@@ -361,7 +361,7 @@
 				PREBINDING = NO;
 				PRODUCT_NAME = "MacPorts Notifier";
 				WRAPPER_EXTENSION = app;
-				ZERO_LINK = YES;
+				ZERO_LINK = NO;
 			};
 			name = Debug;
 		};
@@ -371,7 +371,7 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_MODEL_TUNING = G5;
+				GCC_MODEL_TUNING = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
 				INFOPLIST_FILE = info.plist;
@@ -427,7 +427,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				VERSIONING_SYSTEM = "";
 			};
 			name = Debug;
 		};
@@ -437,7 +437,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				VERSIONING_SYSTEM = "";
 			};
 			name = Release;
 		};
