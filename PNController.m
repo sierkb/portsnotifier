@@ -233,7 +233,6 @@ finish:
 	id plist;
 	plistData = [NSData dataWithContentsOfFile:path];
 	
-	NSLog([[NSDictionary dictionaryWithContentsOfFile:path] stringRepresentation]);
 	plist = [NSPropertyListSerialization propertyListFromData:plistData
 											 mutabilityOption:NSPropertyListImmutable
 													   format:&format
