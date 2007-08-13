@@ -1,3 +1,9 @@
- * 0.1.1	18th, June, 2007 
+* 0.1.2 13th, August, 2007 
+  1. be one port in macports.
+  2. add maintainer: Randall Wood <rhwood@mac.com> 
+  3. change order of status menu
+  4. change informations in about panel
+
+* 0.1.1	18th, June, 2007 
   1. new icon sets
-  2. about penal
+  2. about panel
