@@ -4,6 +4,7 @@
 #import "PNPortInfo.h"
 #import "PNDefines.h"
 #import "SecurityFoundation/SFAuthorization.h"
+#import "PNPrefsWindowController.h"
 
 #import "stdio.h"
 
@@ -266,4 +267,9 @@ finish:
 	return [NSArray arrayWithObjects:@"10 minutes", @"20 minutes", @"30 minutes", @"1 hour",
 		@"2 hours", @"1 day", nil];
 }
+
+- (IBAction)orderFrontPreferencePanel:(id)sender {
+	[[PNPrefsWindowController sharedPrefsWindowController] showWindow:self];
+}
+
 @end
