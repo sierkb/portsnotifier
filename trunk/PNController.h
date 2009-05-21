@@ -37,4 +37,6 @@
 - (IBAction)savePreferences:(id)sender;
 - (NSArray *)availableIntervals;
 
+- (IBAction)orderFrontPreferencePanel:(id)sender;
+ 
 @end
