@@ -1,0 +1,18 @@
+# Introduction #
+
+List all todo items here, category by version number.
+
+
+**Short-term goal**
+
+# 0.2.0 #
+
+  * Growl support
+  * A simple query windows for searching a port
+  * A status windows which print upgrading process and system output.
+
+
+# 0.5.0 #
+
+  * New architecture, being a general outdated notifier platform.
+  * Initially support outdate information for macports and the Apps which is installed in /Application
